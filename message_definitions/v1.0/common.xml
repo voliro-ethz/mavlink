@@ -3895,6 +3895,7 @@
       <field type="float[6]" name="alpha">alpha</field>
       <field type="float[6]" name="omega">omega</field>
     </message>
+
     <message id="270" name="SET_ATTITUDE_POSITION_VOLIRO">
       <description>Sets a desired vehicle attitude. Used by an external controller to command the vehicle (manual controller or other system).</description>
       <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
@@ -3923,6 +3924,31 @@
       <description>Pretty please with cherry on top!</description>
       <field type="float[6]" name="alpha">alpha</field>
     </message>
+
+    <message id="272" name="VOLIRO_FULL_SETPOINT">
+      <description>The ultimate setpoint for voliro</description>
+      <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
+      <field type="uint8_t" name="target_system">System ID</field>
+      <field type="uint8_t" name="target_component">Component ID</field>
+
+      <field type="float" name="x">X Position in NED frame in meters</field>
+      <field type="float" name="y">Y Position in NED frame in meters</field>
+      <field type="float" name="z">Z Position in NED frame in meters (note, altitude is negative in NED)</field>
+
+      <field type="float[4]" name="q">Attitude quaternion (w, x, y, z order, zero-rotation is 1, 0, 0, 0)</field>
+
+      <field type="float" name="vx">X velocity in NED frame in meter / s</field>
+      <field type="float" name="vy">Y velocity in NED frame in meter / s</field>
+      <field type="float" name="vz">Z velocity in NED frame in meter / s</field>
+
+      <field type="float" name="roll_rate">Body roll rate in radians per second</field>
+      <field type="float" name="pitch_rate">Body roll rate in radians per second</field>
+      <field type="float" name="yaw_rate">Body roll rate in radians per second</field>
+
+
+    </message>
+
+
 
   </messages>
 </mavlink>
