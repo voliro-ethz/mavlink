@@ -3931,6 +3931,10 @@
       <field type="uint8_t" name="target_system">System ID</field>
       <field type="uint8_t" name="target_component">Component ID</field>
 
+      <field type="uint8_t" name="takeoff_enabled">Flag for Takeoff</field>
+      <field type="uint8_t" name="landing_enabled">Flag for Landing</field>
+      <field type="uint8_t" name="velocity_enabled">Flag for Velocity mode</field>
+
       <field type="float" name="x">X Position in NED frame in meters</field>
       <field type="float" name="y">Y Position in NED frame in meters</field>
       <field type="float" name="z">Z Position in NED frame in meters (note, altitude is negative in NED)</field>
