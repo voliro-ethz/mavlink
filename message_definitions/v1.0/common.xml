@@ -4006,6 +4006,7 @@
 
             <field type="uint8_t" name="takeoff_enabled">Flag for Takeoff</field>
             <field type="uint8_t" name="landing_enabled">Flag for Landing</field>
+            <field type="uint8_t" name="rotorguards_tola_enabled">Flag Takeoff and Landing on Rotorguards</field>
             <field type="uint8_t" name="velocity_enabled">Flag for Velocity mode</field>
 
             <field type="float" name="x">X Position in NED frame in meters</field>
