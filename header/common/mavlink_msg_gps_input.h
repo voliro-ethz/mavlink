@@ -18,7 +18,7 @@ typedef struct __mavlink_gps_input_t {
  float speed_accuracy; /*< GPS speed accuracy in m/s*/
  float horiz_accuracy; /*< GPS horizontal accuracy in m*/
  float vert_accuracy; /*< GPS vertical accuracy in m*/
- uint16_t ignore_flags; /*< Flags indicating which fields to ignore (see GPS_INPUT_IGNORE_FLAGS enum).  All other fields must be provided.*/
+ uint16_t ignore_flags; /*< Flags indicating which fields to ignore (see GPS_INPUT_IGNORE_FLAGS enum). All other fields must be provided.*/
  uint16_t time_week; /*< GPS week number*/
  uint8_t gps_id; /*< ID of the GPS for multiple GPS inputs*/
  uint8_t fix_type; /*< 0-1: no fix, 2: 2D fix, 3: 3D fix. 4: 3D with DGPS. 5: 3D with RTK*/
@@ -94,7 +94,7 @@ typedef struct __mavlink_gps_input_t {
  *
  * @param time_usec Timestamp (micros since boot or Unix epoch)
  * @param gps_id ID of the GPS for multiple GPS inputs
- * @param ignore_flags Flags indicating which fields to ignore (see GPS_INPUT_IGNORE_FLAGS enum).  All other fields must be provided.
+ * @param ignore_flags Flags indicating which fields to ignore (see GPS_INPUT_IGNORE_FLAGS enum). All other fields must be provided.
  * @param time_week_ms GPS time (milliseconds from start of GPS week)
  * @param time_week GPS week number
  * @param fix_type 0-1: no fix, 2: 2D fix, 3: 3D fix. 4: 3D with DGPS. 5: 3D with RTK
@@ -173,7 +173,7 @@ static inline uint16_t mavlink_msg_gps_input_pack(uint8_t system_id, uint8_t com
  * @param msg The MAVLink message to compress the data into
  * @param time_usec Timestamp (micros since boot or Unix epoch)
  * @param gps_id ID of the GPS for multiple GPS inputs
- * @param ignore_flags Flags indicating which fields to ignore (see GPS_INPUT_IGNORE_FLAGS enum).  All other fields must be provided.
+ * @param ignore_flags Flags indicating which fields to ignore (see GPS_INPUT_IGNORE_FLAGS enum). All other fields must be provided.
  * @param time_week_ms GPS time (milliseconds from start of GPS week)
  * @param time_week GPS week number
  * @param fix_type 0-1: no fix, 2: 2D fix, 3: 3D fix. 4: 3D with DGPS. 5: 3D with RTK
@@ -278,7 +278,7 @@ static inline uint16_t mavlink_msg_gps_input_encode_chan(uint8_t system_id, uint
  *
  * @param time_usec Timestamp (micros since boot or Unix epoch)
  * @param gps_id ID of the GPS for multiple GPS inputs
- * @param ignore_flags Flags indicating which fields to ignore (see GPS_INPUT_IGNORE_FLAGS enum).  All other fields must be provided.
+ * @param ignore_flags Flags indicating which fields to ignore (see GPS_INPUT_IGNORE_FLAGS enum). All other fields must be provided.
  * @param time_week_ms GPS time (milliseconds from start of GPS week)
  * @param time_week GPS week number
  * @param fix_type 0-1: no fix, 2: 2D fix, 3: 3D fix. 4: 3D with DGPS. 5: 3D with RTK
@@ -446,7 +446,7 @@ static inline uint8_t mavlink_msg_gps_input_get_gps_id(const mavlink_message_t* 
 /**
  * @brief Get field ignore_flags from gps_input message
  *
- * @return Flags indicating which fields to ignore (see GPS_INPUT_IGNORE_FLAGS enum).  All other fields must be provided.
+ * @return Flags indicating which fields to ignore (see GPS_INPUT_IGNORE_FLAGS enum). All other fields must be provided.
  */
 static inline uint16_t mavlink_msg_gps_input_get_ignore_flags(const mavlink_message_t* msg)
 {

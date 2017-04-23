@@ -4007,6 +4007,46 @@
             <field type="float" name="yaw_rate">Body roll rate in radians per second</field>
 
         </message>
+        <message id="273" name="VOLIRO_BALLBOT_FULLSTATE">
+            <description>The full state information of the hexaballbot of voliro. Mainly for logging</description>
+            <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
+            <field type="uint8_t" name="target_system">System ID</field>
+            <field type="uint8_t" name="target_component">Component ID</field>
+
+            <field type="float" name="thetaX">X Angle in Euler angles ZYX in radians</field>
+            <field type="float" name="thetaXdot">Derivative of X Angle in Euler angles ZYX in radians</field>
+            <field type="float" name="thetaY">Y Angle in Euler angles ZYX in radians</field>
+            <field type="float" name="thetaYdot">Derivative of Y Angle in Euler angles ZYX in radians</field>
+            <field type="float" name="thetaZ">Z Angle in Euler angles ZYX in radians</field>
+            <field type="float" name="thetaZdot">Derivative of Z Angle in Euler angles ZYX in radians</field>
+            <field type="float" name="phiX">Rolling angle around X in radians</field>
+            <field type="float" name="phiXdot">Derivative of Rolling angle around X in radians</field>
+            <field type="float" name="phiY">Rolling angle around Y in radians</field>
+            <field type="float" name="phiYdot">Derivative of Rolling angle around Y in radians</field>
+
+            <field type="uint8_t" name="start_enabled">Flag for Takeoff</field>
+            <field type="uint8_t" name="stop_enabled">Flag for Landing</field>
+            <field type="uint8_t" name="flag1">Generic Flag 1</field>
+            <field type="uint8_t" name="flag2">Generic Flag 2</field>
+        </message>
+
+        <message id="274" name="VOLIRO_BALLBOT_SHORTSTATE">
+            <description>The full state informationof the hexaballbot of voliro, mainly for reference</description>
+            <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
+            <field type="uint8_t" name="target_system">System ID</field>
+            <field type="uint8_t" name="target_component">Component ID</field>
+
+            <field type="float" name="thetaX">X Angle in Euler angles ZYX in radians</field>
+            <field type="float" name="thetaY">Y Angle in Euler angles ZYX in radians</field>
+            <field type="float" name="thetaZ">Z Angle in Euler angles ZYX in radians</field>
+            <field type="float" name="phiX">Rolling angle around X in radians</field>
+            <field type="float" name="phiY">Rolling angle around Y in radians</field>
+
+            <field type="uint8_t" name="start_enabled">Flag for Takeoff</field>
+            <field type="uint8_t" name="stop_enabled">Flag for Landing</field>
+            <field type="uint8_t" name="flag1">Generic Flag 1</field>
+            <field type="uint8_t" name="flag2">Generic Flag 2</field>
+        </message>
 
     </messages>
 </mavlink>
