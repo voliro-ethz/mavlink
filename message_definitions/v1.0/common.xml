@@ -3960,10 +3960,10 @@
             <field type="float[3]" name="port_A_4">omega</field>
             <field type="float[3]" name="port_A_5">omega</field>
             <field type="float[3]" name="port_A_6">omega</field>
-            <!-- <field type="float[3]" name="port_A_7">omega</field>
+            <field type="float[3]" name="port_A_7">omega</field>
             <field type="float[3]" name="port_A_8">omega</field>
             <field type="float[3]" name="port_A_9">omega</field>
-            <field type="float[3]" name="port_B_1">omega</field>
+            <!-- <field type="float[3]" name="port_B_1">omega</field>
             <field type="float[3]" name="port_B_2">omega</field>
             <field type="float[3]" name="port_B_3">omega</field>
             <field type="float[3]" name="port_B_4">omega</field>
