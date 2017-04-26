@@ -4009,6 +4009,13 @@
 
         </message>
 
+        <message id="273" name="VOLIRO_INVERSE">
+            <description>Pretty please with cherry on top!</description>
+            <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
+            <field type="float[6]" name="alpha">alpha</field>
+            <field type="float[6]" name="F_M_des">alpha</field>
+        </message>
+
         <message id="282" name="VOLIRO_FULL_DESIRED">
             <description>Pretty please with cherry on top!</description>
             <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
