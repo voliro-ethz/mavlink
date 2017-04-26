@@ -3944,7 +3944,7 @@
             <field type="uint8_t" name="target_component">component ID of the target</field>
             <field type="uint16_t" name="sequence">sequence number (must match the one in LOGGING_DATA_ACKED)</field>
         </message>
-        
+
         <message id="269" name="VOLIRO_OMEGA">
             <description>Pretty please with cherry on top!</description>
             <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
@@ -4009,7 +4009,7 @@
 
         </message>
 
-        <message id="282" name="FULL_DESIRED">
+        <message id="282" name="VOLIRO_FULL_DESIRED">
             <description>Pretty please with cherry on top!</description>
             <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
             <field type="float[6]" name="F_M_des">alpha</field>
