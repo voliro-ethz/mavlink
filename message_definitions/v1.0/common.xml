@@ -3944,10 +3944,11 @@
             <field type="uint8_t" name="target_component">component ID of the target</field>
             <field type="uint16_t" name="sequence">sequence number (must match the one in LOGGING_DATA_ACKED)</field>
         </message>
-        <message id="269" name="VOLIRO_AO">
+        
+        <message id="269" name="VOLIRO_OMEGA">
             <description>Pretty please with cherry on top!</description>
-            <field type="float[6]" name="alpha">alpha</field>
-            <field type="float[6]" name="omega">omega</field>
+            <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
+            <field type="float[6]" name="omega">alpha</field>
         </message>
 
         <message id="270" name="VOLOGGING">
@@ -4006,6 +4007,12 @@
             <field type="float" name="pitch_rate">Body roll rate in radians per second</field>
             <field type="float" name="yaw_rate">Body roll rate in radians per second</field>
 
+        </message>
+
+        <message id="282" name="FULL_DESIRED">
+            <description>Pretty please with cherry on top!</description>
+            <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
+            <field type="float[6]" name="F_M_des">alpha</field>
         </message>
 
     </messages>
