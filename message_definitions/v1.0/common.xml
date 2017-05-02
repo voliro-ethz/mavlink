@@ -3944,10 +3944,11 @@
             <field type="uint8_t" name="target_component">component ID of the target</field>
             <field type="uint16_t" name="sequence">sequence number (must match the one in LOGGING_DATA_ACKED)</field>
         </message>
-        <message id="269" name="VOLIRO_AO">
+
+        <message id="269" name="VOLIRO_OMEGA">
             <description>Pretty please with cherry on top!</description>
-            <field type="float[6]" name="alpha">alpha</field>
-            <field type="float[6]" name="omega">omega</field>
+            <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
+            <field type="float[6]" name="omega">alpha</field>
         </message>
 
         <message id="270" name="VOLOGGING">
@@ -4007,6 +4008,60 @@
             <field type="float" name="yaw_rate">Body roll rate in radians per second</field>
 
         </message>
+
+        <message id="273" name="VOLIRO_INVERSE">
+            <description>Pretty please with cherry on top!</description>
+            <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
+            <field type="float[6]" name="alpha">alpha</field>
+            <field type="float[6]" name="F_M_des">alpha</field>
+        </message>
+
+        <message id="274" name="VOLIRO_PID_TUNING">
+            <description>Pretty please with cherry on top!</description>
+            <field type="uint8_t" name="valid">Bool to take current parameters</field>
+
+            <field type="float" name="xy_pos_p">PID parameter</field>
+            <field type="float" name="xy_pos_i">PID parameter</field>
+            <field type="float" name="xy_pos_d">PID parameter</field>
+
+            <field type="float" name="z_pos_p">PID parameter</field>
+            <field type="float" name="z_pos_i">PID parameter</field>
+            <field type="float" name="z_pos_d">PID parameter</field>
+
+            <field type="float" name="xy_vel_p">PID parameter</field>
+            <field type="float" name="xy_vel_i">PID parameter</field>
+            <field type="float" name="xy_vel_d">PID parameter</field>
+
+            <field type="float" name="z_vel_p">PID parameter</field>
+            <field type="float" name="z_vel_i">PID parameter</field>
+            <field type="float" name="z_vel_d">PID parameter</field>
+
+            <field type="float" name="roll_p">PID parameter</field>
+            <field type="float" name="roll_i">PID parameter</field>
+            <field type="float" name="roll_d">PID parameter</field>
+
+            <field type="float" name="pitch_p">PID parameter</field>
+            <field type="float" name="pitch_i">PID parameter</field>
+            <field type="float" name="pitch_d">PID parameter</field>
+
+            <field type="float" name="yaw_p">PID parameter</field>
+            <field type="float" name="yaw_i">PID parameter</field>
+            <field type="float" name="yaw_d">PID parameter</field>
+
+            <field type="float" name="rollrate_p">PID parameter</field>
+            <field type="float" name="rollrate_i">PID parameter</field>
+            <field type="float" name="rollrate_d">PID parameter</field>
+
+            <field type="float" name="pitchrate_p">PID parameter</field>
+            <field type="float" name="pitchrate_i">PID parameter</field>
+            <field type="float" name="pitchrate_d">PID parameter</field>
+
+            <field type="float" name="yawrate_p">PID parameter</field>
+            <field type="float" name="yawrate_i">PID parameter</field>
+            <field type="float" name="yawrate_d">PID parameter</field>
+
+        </message>
+
         <message id="310" name="VOLIRO_BALLBOT_FULLSTATE">
             <description>The full state information of the hexaballbot of voliro. Mainly for logging</description>
             <field type="uint32_t" name="time_boot_ms">Timestamp in milliseconds since system boot</field>
