@@ -3990,6 +3990,7 @@
 
             <field type="uint8_t" name="takeoff_enabled">Flag for Takeoff</field>
             <field type="uint8_t" name="landing_enabled">Flag for Landing</field>
+            <field type="uint8_t" name="filter_sp_enabled">Flag for Filtering Setpoints</field>
             <field type="uint8_t" name="rotorguards_tola_enabled">Flag Takeoff and Landing on Rotorguards</field>
             <field type="uint8_t" name="velocity_enabled">Flag for Velocity mode</field>
             <field type="uint8_t" name="fan_enabled">Flag for Velocity mode</field>
