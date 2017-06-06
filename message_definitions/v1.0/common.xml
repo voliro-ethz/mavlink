@@ -3998,6 +3998,10 @@
             <field type="uint8_t" name="unwinding">Flag for unwinding alphas</field>
             <field type="uint8_t" name="fan_enabled">Flag for Velocity mode</field>
             <field type="uint8_t" name="manual_position">Flag for Manual Position Mode mode</field>
+            <field type="uint8_t" name="wall">Flag for Wall mode</field>
+            <field type="uint8_t" name="winding">Flag Winding maneuver</field>
+            <field type="uint8_t" name="intuitive_control">Flag for Intuitive Control mode</field>
+            <field type="uint8_t" name="bird">Flag for Bird</field>
 
 
             <field type="float" name="x">X Position in NED frame in meters</field>
