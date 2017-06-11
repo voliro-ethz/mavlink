@@ -4032,6 +4032,8 @@
             <field type="uint8_t" name="valid">Bool to take current parameters</field>
 
             <field type="float" name="cog_offset">PID parameter</field>
+            <field type="float" name="switch_lb">PID parameter</field>
+            <field type="float" name="switch_ub">PID parameter</field>
 
             <field type="float" name="xy_pos_p">PID parameter</field>
             <field type="float" name="xy_pos_i">PID parameter</field>
