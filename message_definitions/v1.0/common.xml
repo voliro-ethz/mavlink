@@ -3990,6 +3990,7 @@
 
             <field type="uint8_t" name="takeoff_enabled">Flag for Takeoff</field>
             <field type="uint8_t" name="landing_enabled">Flag for Landing</field>
+	          <field type="uint8_t" name="wall_enabled">Flag for Wall</field>
             <field type="uint8_t" name="filter_sp_enabled">Flag for Filtering Setpoints</field>
             <field type="uint8_t" name="rotorguards_tola_enabled">Flag Takeoff and Landing on Rotorguards</field>
             <field type="uint8_t" name="headless_enabled">Flag for headless mode</field>
@@ -3998,7 +3999,6 @@
             <field type="uint8_t" name="unwinding">Flag for unwinding alphas</field>
             <field type="uint8_t" name="fan_enabled">Flag for Velocity mode</field>
             <field type="uint8_t" name="manual_position">Flag for Manual Position Mode mode</field>
-            <field type="uint8_t" name="wall">Flag for Wall mode</field>
             <field type="uint8_t" name="winding">Flag Winding maneuver</field>
             <field type="uint8_t" name="intuitive_control">Flag for Intuitive Control mode</field>
             <field type="uint8_t" name="bird">Flag for Bird</field>
@@ -4017,6 +4017,10 @@
             <field type="float" name="roll_rate">Body roll rate in radians per second</field>
             <field type="float" name="pitch_rate">Body roll rate in radians per second</field>
             <field type="float" name="yaw_rate">Body roll rate in radians per second</field>
+
+            <field type="float" name="wallposition"> Position on wall in NED frame in meters</field>
+            <field type="float[2]" name="wallpoint"> Point on wall in NED frame in meters</field>
+            <field type="float[2]" name="wallvector"> Normalvector of wall in NED frame in meters</field>
 
         </message>
 
