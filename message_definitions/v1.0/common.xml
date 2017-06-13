@@ -4135,5 +4135,26 @@
             <field type="uint8_t" name="flag2">Generic Flag 2</field>
         </message>
 
+        <message id="312" name="VOLIRO_BALLBOT_LQR_MATRIX">
+            <description>The LQR matrices splited in part, for testing purpose</description>
+            <field type="float[8]" name="K_u_1">alpha</field>
+            <field type="float[8]" name="K_u_2">alpha</field>
+            <field type="float[8]" name="K_u_3">alpha</field>
+            <field type="float[8]" name="K_u_4">alpha</field>
+            <field type="float[8]" name="K_u_5">alpha</field>
+            <field type="float[8]" name="K_u_6">alpha</field>
+
+        </message>
+
+        <message id="313" name="VOLIRO_BALLBOT_INTEGRATOR_MATRIX">
+            <description>The LQR matrices splited in part, for testing purpose</description>
+            <field type="float[4]" name="K_i_1">alpha</field>
+            <field type="float[4]" name="K_i_2">alpha</field>
+            <field type="float[4]" name="K_i_3">alpha</field>
+            <field type="float[4]" name="K_i_4">alpha</field>
+            <field type="float[4]" name="K_i_5">alpha</field>
+            <field type="float[4]" name="K_i_6">alpha</field>
+        </message>
+
     </messages>
 </mavlink>
