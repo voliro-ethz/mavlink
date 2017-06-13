@@ -4018,6 +4018,7 @@
             <field type="float" name="pitch_rate">Body roll rate in radians per second</field>
             <field type="float" name="yaw_rate">Body roll rate in radians per second</field>
 
+            <field type="float" name="wallposition"> Position on wall in NED frame in meters</field>
             <field type="float[2]" name="wallpoint"> Point on wall in NED frame in meters</field>
             <field type="float[2]" name="wallvector"> Normalvector of wall in NED frame in meters</field>
 
