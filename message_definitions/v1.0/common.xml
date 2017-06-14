@@ -3990,6 +3990,7 @@
 
             <field type="uint8_t" name="takeoff_enabled">Flag for Takeoff</field>
             <field type="uint8_t" name="landing_enabled">Flag for Landing</field>
+	          <field type="uint8_t" name="wall_enabled">Flag for Wall</field>
             <field type="uint8_t" name="filter_sp_enabled">Flag for Filtering Setpoints</field>
             <field type="uint8_t" name="rotorguards_tola_enabled">Flag Takeoff and Landing on Rotorguards</field>
             <field type="uint8_t" name="headless_enabled">Flag for headless mode</field>
@@ -3998,9 +3999,10 @@
             <field type="uint8_t" name="unwinding">Flag for unwinding alphas</field>
             <field type="uint8_t" name="fan_enabled">Flag for Velocity mode</field>
             <field type="uint8_t" name="manual_position">Flag for Manual Position Mode mode</field>
-            <field type="uint8_t" name="wall">Flag for Wall mode</field>
             <field type="uint8_t" name="winding">Flag Winding maneuver</field>
             <field type="uint8_t" name="intuitive_control">Flag for Intuitive Control mode</field>
+            <field type="uint8_t" name="absolute_enabled">Flag for absolute/rate orientation in Intuitive Control mode</field>
+            <field type="uint8_t" name="horizontalize_enabled">Flag for horizontalize orientation in Intuitive Control mode</field>
             <field type="uint8_t" name="bird">Flag for Bird</field>
 
 
@@ -4018,6 +4020,10 @@
             <field type="float" name="pitch_rate">Body roll rate in radians per second</field>
             <field type="float" name="yaw_rate">Body roll rate in radians per second</field>
 
+            <field type="float" name="wallposition"> Position on wall in NED frame in meters</field>
+            <field type="float[2]" name="wallpoint"> Point on wall in NED frame in meters</field>
+            <field type="float[2]" name="wallvector"> Normalvector of wall in NED frame in meters</field>
+
         </message>
 
         <message id="273" name="VOLIRO_INVERSE">
@@ -4032,6 +4038,8 @@
             <field type="uint8_t" name="valid">Bool to take current parameters</field>
 
             <field type="float" name="cog_offset">PID parameter</field>
+            <field type="float" name="switch_lb">PID parameter</field>
+            <field type="float" name="switch_ub">PID parameter</field>
 
             <field type="float" name="xy_pos_p">PID parameter</field>
             <field type="float" name="xy_pos_i">PID parameter</field>
@@ -4133,6 +4141,27 @@
             <field type="uint8_t" name="stop_enabled">Flag for Landing</field>
             <field type="uint8_t" name="flag1">Generic Flag 1</field>
             <field type="uint8_t" name="flag2">Generic Flag 2</field>
+        </message>
+
+        <message id="312" name="VOLIRO_BALLBOT_LQR_MATRIX">
+            <description>The LQR matrices splited in part, for testing purpose</description>
+            <field type="float[8]" name="K_u_1">alpha</field>
+            <field type="float[8]" name="K_u_2">alpha</field>
+            <field type="float[8]" name="K_u_3">alpha</field>
+            <field type="float[8]" name="K_u_4">alpha</field>
+            <field type="float[8]" name="K_u_5">alpha</field>
+            <field type="float[8]" name="K_u_6">alpha</field>
+
+        </message>
+
+        <message id="313" name="VOLIRO_BALLBOT_INTEGRATOR_MATRIX">
+            <description>The LQR matrices splited in part, for testing purpose</description>
+            <field type="float[4]" name="K_i_1">alpha</field>
+            <field type="float[4]" name="K_i_2">alpha</field>
+            <field type="float[4]" name="K_i_3">alpha</field>
+            <field type="float[4]" name="K_i_4">alpha</field>
+            <field type="float[4]" name="K_i_5">alpha</field>
+            <field type="float[4]" name="K_i_6">alpha</field>
         </message>
 
     </messages>
